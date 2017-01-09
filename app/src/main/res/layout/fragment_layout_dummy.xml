@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+    android:layout_gravity="center_horizontal"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:nestedScrollingEnabled="true">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:paddingTop="8dp"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        >
+
+
+        <EditText
+            android:id="@+id/nombreInput"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            android:editable="false"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:nestedScrollingEnabled="true" />
+
+        <EditText
+                android:id="@+id/tipoInput"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tipo"
+                android:inputType="textPersonName"
+                android:editable="false"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:nestedScrollingEnabled="true" />
+
+        <EditText
+            android:id="@+id/dataNacInput"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nacimiento"
+            android:editable="false"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:nestedScrollingEnabled="true"
+            android:inputType="datetime" />
+
+        <EditText
+            android:id="@+id/DataVacuna"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha de Vacunacion"
+            android:inputType="datetime"
+            android:editable="false"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:nestedScrollingEnabled="true" />
+
+        <EditText
+            android:id="@+id/CitaVeterinario"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cita Veterinario"
+            android:inputType="datetime"
+            android:editable="false"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:nestedScrollingEnabled="true" />
+
+        <CheckBox
+            android:layout_width="298dp"
+            android:layout_height="wrap_content"
+            android:text="Tratamiento especial"
+            android:id="@+id/especial"
+            android:checked="false"
+            android:layout_weight="3.75"
+            android:layout_marginTop="20dp"
+            android:nestedScrollingEnabled="true" />
+
+
+
+    </LinearLayout>
+</ScrollView>
